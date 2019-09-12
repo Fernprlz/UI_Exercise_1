@@ -18,7 +18,7 @@ User's Interface first exercise on web design.
 So, our web design must look somewhat like this:
 
 <p align="center">
-  <img src="/image/reference.png" alt="Not working, huh?">
+  <img src="/images/reference.png" alt="Not working, huh?">
 </p>
 
 ---
