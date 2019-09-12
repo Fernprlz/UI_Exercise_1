@@ -1,0 +1,30 @@
+
+/* 
+    Style Sheet for our Web Design
+*/
+
+/* 
+    All these values at this point are dummy values 
+    used to test some functionalities.
+*/
+
+body {
+    background-color: powderblue;
+}
+
+h1 {
+    color: white;
+    border: 1px dotted black;
+    font-family: 'Roboto';
+    padding: 30px;
+    text-align: center;
+    text-shadow: 3px 2px black;
+}
+
+p {
+    font-family: 'Roboto';
+    color: black;
+    vertical-align: center;
+    text-align: center;
+    padding: 50px;
+}
