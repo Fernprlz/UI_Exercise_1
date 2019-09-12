@@ -1,24 +1,35 @@
 
-/* 
+/*
     Style Sheet for our Web Design
 */
 
-/* 
-    All these values at this point are dummy values 
+/*
+    All these values at this point are dummy values
     used to test some functionalities.
 */
+
+#headbox {
+  background-color:grey;
+}
+#logo{
+  padding: 15px;
+  float: left;
+}
 
 body {
     background-color: powderblue;
 }
-
+ul {
+  float: right;
+  padding-right: 15px;
+}
 h1 {
     color: white;
-    border: 1px dotted black;
     font-family: 'Roboto';
-    padding: 30px;
+    float: inherit;
     text-align: center;
     text-shadow: 3px 2px black;
+    padding: 30px;
 }
 
 p {
