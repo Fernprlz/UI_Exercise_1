@@ -8,21 +8,63 @@
     used to test some functionalities.
 */
 
-#headbox {
+.panel {
   background-color:grey;
+  border-radius: 15px;
 }
+
+.option-button {
+  font-family: 'Roboto';
+  color: white;
+  float: right;
+  margin-right: 15px;
+  background-color: #c1d6d6;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 4px;
+}
+
+#head-menu{
+  float:right;
+  margin-right: 20px;
+  vertical-align: center;
+}
+
 #logo{
   padding: 15px;
   float: left;
 }
 
+/* TODO: Body Boxes do not have the appropriate width*/
+
+#leftbox {
+  width: 30%;
+  height: auto;
+  float: left;
+}
+
+#rightbox {
+  width: 50%;
+  height: auto;
+  float:right;
+  text-align: justify;
+}
+/*--------------------------------------------------*/
+
+ul{
+  align-items: center;
+}
+
 body {
     background-color: powderblue;
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+
+
 }
-ul {
-  float: right;
-  padding-right: 15px;
-}
+
 h1 {
     color: white;
     font-family: 'Roboto';
@@ -35,7 +77,6 @@ h1 {
 p {
     font-family: 'Roboto';
     color: black;
-    vertical-align: center;
     text-align: center;
     padding: 50px;
 }
