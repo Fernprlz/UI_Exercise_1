@@ -1,0 +1,142 @@
+/*TODO: SOLVE ARBITRARY VALUES
+ARBITRARY VALUES MAKE SCALABILITY
+REALLY HARD TO CONTROL
+*/
+
+#page {
+  background-color: #b6cfbc;
+  border-radius: 6px;
+  width: auto;
+  height: 1000px;
+}
+
+#headbox {
+  padding: inherit;
+  padding-left: 10px;
+  width: auto;
+  display: block;
+
+  /* DEBUG BORDERS */
+  border: 1px;
+  border-style: groove;
+  border-color: black;
+  /* ------------- */
+}
+
+#leftbox {
+  padding: inherit;
+  padding-left: 10px;
+  width: 30%;
+  height: 96%;
+  float: left;
+  background-color: #90a4a6;
+
+  /* DEBUG BORDERS */
+  border: 1px;
+  border-style: groove;
+  border-color: black;
+  /* ------------- */
+}
+
+#rightbox {
+  padding: inherit;
+  padding-left: 10px;
+  width: 63%;
+  height: 96%;
+  float: right;
+  background-color: #90a4a6;
+
+  /* DEBUG BORDERS */
+  border: 1px;
+  border-style: groove;
+  border-color: black;
+  /* ------------- */
+}
+
+#logo {
+  float: left;
+  margin-top: 10px;
+
+
+  /* DEBUG BORDERS */
+  border: 1px;
+  border-style: groove;
+  border-color: black;
+  /* ------------- */
+}
+
+#head-menu {
+  display: inline-block;
+  float: right;
+  padding: 10px;
+  margin-right: 15px;
+
+
+
+  /* DEBUG BORDERS */
+  border: 1px;
+  border-style: groove;
+  border-color: black;
+  /* ------------- */
+}
+
+.option-button {
+  font-family: 'Roboto';
+  color: white;
+  background-color: #b6cfbc;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 4px;
+  margin-right: 15px;
+}
+
+.site {
+  margin: 8px;
+  padding: 10px;
+}
+
+.panel {
+  display: inline-block;
+
+  background-color: #73b8bf;
+  border-radius: 6px;
+  margin: inherit;
+
+  width: auto;
+  height: auto;
+}
+
+html {
+  background-color: #0c855A;
+  padding: 10px;
+  margin: 8px;
+}
+
+h1 {
+  color: white;
+  font-family: 'Roboto';
+  text-align: left;
+  text-shadow: 3px 2px black;
+  display: inline-block;
+  margin-left: 10px;
+
+  /* DEBUG BORDERS */
+  border: 1px;
+  border-style: groove;
+  border-color: black;
+  /* ------------- */
+}
+
+ul {
+  margin-bottom: 10px;
+
+  /* DEBUG BORDERS */
+  border: 1px;
+  border-style: groove;
+  border-color: black;
+  /* ------------- */
+}
+
+a {
+
+}

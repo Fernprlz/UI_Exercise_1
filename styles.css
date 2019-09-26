@@ -8,6 +8,7 @@
     used to test some functionalities.
 */
 
+
 .panel {
   background-color:grey;
   border-radius: 15px;
@@ -25,9 +26,9 @@
 }
 
 #head-menu{
-  float:right;
+  float: right;
   margin-right: 20px;
-  vertical-align: center;
+  margin-top: 20px;
 }
 
 #logo{
@@ -69,7 +70,7 @@ h1 {
     color: white;
     font-family: 'Roboto';
     float: inherit;
-    text-align: center;
+    text-align: left;
     text-shadow: 3px 2px black;
     padding: 30px;
 }

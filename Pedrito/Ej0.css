@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#contenedorppl{
+    width: 100%;
+    height: 800px;
+    background: #000000;
+}
+
+/*Estilo de la cabecera*/
+#cabecera{
+    width:95%;
+    height: 15%;
+    padding: 5px;
+    background: #FFDC00;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#cabecera h1{
+    text-align:center;
+}
+#boton{
+    width:6%;
+    background-color:#000000;
+    height: 30px;
+    float: right;
+    padding:3px;
+    display: inline-block;
+}
+.button {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #FF9E00;
+  }
+
+ /*Estilo del cuerpo*/
+#cuerpo{
+    width: 95%;
+    height: 65%;
+    margin: 1em;
+    padding: 5px;
+    background: #FF9E00;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#dia1{
+    width: 32.9%;
+    height: 99%;
+    margin: 1px;
+    border-radius: 5px;
+    background-color: #000000;
+    display: inline-block;
+}
+#dia2{
+    width: 32.9%;
+    height: 55%;
+    margin: 1px;
+    border-radius: 5px;
+    background-color: #000000;
+    display: inline-block;
+
+}
+#dia3{
+    width: 32.9%;
+    height: 77%;
+    margin: 1px;
+    border-radius: 5px;
+    background-color: #000000;
+    display: inline-block;
+
+}
+.evento{
+    width: 99%;
+    height:104px;
+    background:#FF6800;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+/*Estilo del pie de página*/
+#pie{
+    width: 70%;
+    height: 10%;
+    border-radius: 5px;
+    background: #FF6800;
+    padding:5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+#pie img{
+    display: inline-block;
+    width:auto;
+    height:40px;
+    margin:10px;
+}
+
+
+/*tooltips*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
