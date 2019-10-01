@@ -1,83 +1,150 @@
-
 /*
-    Style Sheet for our Web Design
-*/
-
-/*
-    All these values at this point are dummy values
-    used to test some functionalities.
+border: 1px;
+border-style: inset;
 */
 
 
+html {
+  background-color: #3FCaC3;
+  padding: 10px;
+  margin: 8px;
+}
 .panel {
-  background-color:grey;
-  border-radius: 15px;
+  display: flex;
+  border-radius: 12px;
 }
-
-.option-button {
+h3, h4, h5, h6, p {
   font-family: 'Roboto';
+}
+a {
+  text-decoration: none;
+}
+a:link, a:active{
   color: white;
-  float: right;
-  margin-right: 15px;
-  background-color: #c1d6d6;
-  border-radius: 5px;
-  display: inline-block;
-  padding: 4px;
 }
-
-#head-menu{
-  float: right;
-  margin-right: 20px;
-  margin-top: 20px;
+a:visited {
+  color: #dae3e3;
 }
-
-#logo{
-  padding: 15px;
-  float: left;
+a:hover {
+  color: hotpink;
 }
-
-/* TODO: Body Boxes do not have the appropriate width*/
-
-#leftbox {
-  width: 30%;
-  height: auto;
-  float: left;
-}
-
-#rightbox {
-  width: 50%;
-  height: auto;
-  float:right;
-  text-align: justify;
-}
-/*--------------------------------------------------*/
-
-ul{
+/* ---<< HEAD MENU >>--- */
+#headbox {
+  background-color: #cfe3e3;
+  padding: 0px 10px 0px 10px;
+  justify-content: space-between;
   align-items: center;
 }
+#logo {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+}
+h1 {
+  font-size: 40px;
+  font-family: 'Roboto';
+}
+nav {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+button {
+  font-size: 17px;
+  border-radius: 15px;
+  border-style: hidden;
+  background-color: white;
+  padding: 15px 15px;
+  margin-left: 10px;
+}
+/* --------------------- */
 
-body {
-    background-color: powderblue;
-    padding-top: 10px;
-    padding-right: 50px;
-    padding-bottom: 10px;
-    padding-left: 50px;
-
-
+/* ------<< BODY >>----- */
+#site-back {
+  width: auto;
+  height: 1000px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#leftbox {
+  width: 33%;
+  height: 1620px;
+  background-color: white;
+  align-items: flex-start;
+  display: block;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.profile-section {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 17px;
+  overflow: hidden;
+}
+#section-title {
+  margin-bottom: 0px;
+  margin-top: 10px;
+  flex: 0 0 100%;
+}
+#profile-info{
+  margin-left: 10px;
+}
+#profile-name {
+  margin-left: 10%;
+  font-size: 25px;
+}
+#profile-pic {
+  width: 30%;
+  margin-left: 10px;
+}
+hr {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 90%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-h1 {
-    color: white;
-    font-family: 'Roboto';
-    float: inherit;
-    text-align: left;
-    text-shadow: 3px 2px black;
-    padding: 30px;
+.opinion-box {
+  list-style-type: none;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-family: 'Roboto';
+  padding: 4px 10px 1px 10px;
+
+  background-color: #cfe3e3;
+  border-radius: 12px;
+}
+
+h5{
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 p {
-    font-family: 'Roboto';
-    color: black;
-    text-align: center;
-    padding: 50px;
+  margin-top: 2px;
+  text-align: justify;
 }
+
+#opinion {
+  font-size: 13px;
+}
+
+#rightbox {
+  width: 66%;
+  height: 1620px;
+  background-color: white;
+
+  align-items: flex-start;
+  display: block;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+
+/* --------------------- */
