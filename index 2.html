@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Head Data -->
+<head>
+  <title>UI_Exercise_1</title>
+
+  <!-- Meta-Data -->
+  <meta charset="utf-8"/>
+  <meta name="author" content="Fernando Pérez Lozano & Antonio Viñuela Pérez"/>
+  <meta name="description" content="First Exercise on User Interfaces">
+
+  <!-- CSS Stylesheet Link -->
+  <link rel="stylesheet" href="styles2.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+
+<!-- Header -->
+<header class="panel" id="headbox">
+
+
+  <img id="logo" src="images/faces.png" alt="WebLogo"/>
+
+  <h1>Title</h1>
+
+  <nav>
+    <button type="button" class="option-button">
+      <a href="index.html">Option 1</a>
+    </button>
+    <button type="button" class="option-button">
+      <a href="index.html">Option 2</a>
+    </button>
+    <button type="button" class="option-button">
+      <a href="index.html">Option 3</a>
+    </button>
+  </nav>
+
+</header>
+
+<!-- Body -->
+<body>
+  <div id="site-back">
+    <!-- Left Panel -->
+    <div class="panel" id="leftbox">
+
+      <!-- Personal Details -->
+      <div class="profile-section">
+        <img id="profile-pic" src="images/profile.png" alt="ProfilePic"/>
+        <h3 id="profile-name">Name</h3>
+        <h3 id="section-title">Personal Information:</h3>
+        <p id="profile-info">
+          Honorio es un empresario centrado en el uso de las energías
+          no renovables. Para el el dinero es solo un medio para poder
+          conseguir lo que realmente importa en esta vida, cita textual:
+          "Bolsos de merchandising de <b>Pucca</b>".
+        </p>
+      </div>
+
+      <hr>
+
+      <!-- Last Opinions -->
+      <div class="profile-section">
+        <h3 id="section-title">Last Opinions:</h3>
+        <li class="section-box">
+          <h5>Chicote Club, Madrid, Spain</h5>
+          <p id="opinion">
+            En ocasiones los objetos más cotidianos son los que menos consideramos
+            como útiles, aunque siempre los tengamos a mano para solucionar nuestros
+            problemas. Digo esto porque curiosamente, para ser un restaurante de 3
+            estrellas michelín, ningun puto cuchillo estaba afilado, y yo acabé, no
+            solo con hambre, sino con ganas de cortarme las venas.
+          </p>
+        </li>
+        <li class="section-box">
+          <h5>Gustavo, Adolfo, Bécquer</h5>
+          <p id="opinion">
+            ¿Qué es poesía? Dices mientras clavas tu pupila en mi pupila azul...
+            ¿Qué es poesía? ¿Y a mí me lo preguntas? Poesía, eres tú hdp.
+          </p>
+        </li>
+        <li class="section-box">
+          <h5>Dame, Dinero, Porfa</h5>
+          <p id="opinion">
+            Estoy to pelao cabron, no me dieron la beca y se la dieron al Luispi...
+            Necesito chelos pa viajar por Leganés, necesito monedos pa salir por
+            La Cubierta a bailar salsa con las latin mamis...
+          </p>
+        </li>
+      </div>
+
+      <hr>
+
+      <!-- Preferences -->
+      <div class="profile-section">
+        <span id="preference-header">
+          <h3 id="section-title">My Preferences:</h3>
+          <button id="preference-add">+</button>
+        </span>
+
+        <span id="preference-body">
+          <span class="preference-box">
+            <h5 id="preference-text">Weekends</h5>
+            <button id="preference-delete">x</button>
+          </span>
+          <span class="preference-box">
+            <h5 id="preference-text">Lemons</h5>
+            <button id="preference-delete">x</button>
+          </span>
+          <span class="preference-box">
+            <h5 id="preference-text">Clean Bathrooms</h5>
+            <button id="preference-delete">x</button>
+          </span>
+          <span class="preference-box">
+            <h5 id="preference-text">Tennis</h5>
+            <button id="preference-delete">x</button>
+          </span>
+          <span class="preference-box">
+            <h5 id="preference-text">Canary Islands</h5>
+            <button id="preference-delete">x</button>
+          </span>
+        </span>
+      </div>
+    </div>
+    <!---------------->
+    <!-- Right Panel -->
+    <div class="panel" id="rightbox">
+      <div class="right-section">
+        <h2 id="section-title">Personal Information</h2>
+
+        <form class="right-inner">
+          <span id="input-group">
+            <input class="form-input" type="text" name="firstname" placeholder="First Name">
+            <input class="form-input" type="text" name="surname" placeholder="Surname">
+          </span>
+          <span id="input-group">
+            <input class="form-input" type="text" name="email" placeholder="e-Mail Address">
+          </span>
+          <span id="input-group">
+            <input class="form-input" type="text" name="address" placeholder="Home Address">
+            <input class="form-input" type="text" name="phonenumber" placeholder="Phone Number">
+          </span>
+          <span id="input-group">
+            <input class="form-input" type="text" name="birthdate" placeholder="Date of Birth">
+          </span>
+        </form>
+
+      </div>
+      <div class="right-section">
+        <h2 id="section-title">My Activity in the App</h2>
+        <div id="activity-box">
+          <div class="activity-icon">
+              <h3 id="activity-number">1250</h3>
+              <h6 id="activity-text">Points</h6>
+          </div>
+          <div class="activity-icon">
+              <h3 id="activity-number">12</h3>
+              <h6 id="activity-text">Level</h6>
+          </div>
+          <div class="activity-icon">
+              <h3 id="activity-number">4</h3>
+              <h6 id="activity-text">Opinions</h6>
+          </div>
+          <div class="activity-icon">
+              <h3 id="activity-number">4</h3>
+              <h6 id="activity-text">Photos</h6>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer class="panel">
+
+      <span id="socials-container">
+
+        <a id="socials-icon" href="https://www.instagram.com">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1024px-Instagram_logo_2016.svg.png" width="20px" height="20px" title="Instagram" alt="Instagram Logo">
+        </a>
+        <div class="vertical-line"></div>
+        <a id="socials-icon" href="https://www.twitter.com">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1024px-Twitter_bird_logo_2012.svg.png" width="20px" height="20px" title="Twitter" alt="Twitter Logo">
+        </a>
+        <div class="vertical-line"></div>
+        <a id="socials-icon" href="https://www.facebook.com">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/600px-Facebook_Logo_%282019%29.png" width="20px" height="20px" title="Facebook" alt="Facebook Logo">
+        </a>
+      </span>
+      <p id="footer-text">
+        ViajeConsejero Copyright &copy; 2019
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
