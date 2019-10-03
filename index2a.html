@@ -10,7 +10,7 @@
   <meta name="description" content="First Exercise on User Interfaces">
 
   <!-- CSS Stylesheet Link -->
-  <link rel="stylesheet" href="styles2.css">
+  <link rel="stylesheet" href="styles2b.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 </head>
 
@@ -20,17 +20,18 @@
 
   <img id="logo" src="images/faces.png" alt="WebLogo"/>
 
-  <h1>Title</h1>
-
-  <nav>
+  <h1>TravelCounsel</h1>
+  <!-- WARNING:  -->
+  <!-- Option Menu inside the header (normal view)-->
+  <nav id="optionsIN">
     <button type="button" class="option-button">
-      <a href="index.html">Option 1</a>
+      <a href="index2a.html">Option 1</a>
     </button>
     <button type="button" class="option-button">
-      <a href="index.html">Option 2</a>
+      <a href="index2a.html">Option 2</a>
     </button>
     <button type="button" class="option-button">
-      <a href="index.html">Option 3</a>
+      <a href="index2a.html">Option 3</a>
     </button>
   </nav>
 
@@ -38,6 +39,20 @@
 
 <!-- Body -->
 <body>
+  <!-- WARNING:  -->
+  <!-- Option Menu outside the header (tablet view)-->
+  <nav id= "optionsOUT">
+    <button type="button" class="option-button">
+      <a href="index2a.html">Option 1</a>
+    </button>
+    <button type="button" class="option-button">
+      <a href="index2a.html">Option 2</a>
+    </button>
+    <button type="button" class="option-button">
+      <a href="index2a.html">Option 3</a>
+    </button>
+  </nav>
+
   <div id="site-back">
     <!-- Left Panel -->
     <div class="panel" id="leftbox">
@@ -45,52 +60,59 @@
       <!-- Personal Details -->
       <div class="profile-section">
         <img id="profile-pic" src="images/profile.png" alt="ProfilePic"/>
-        <h3 id="profile-name">Name</h3>
-        <h3 id="section-title">Personal Information:</h3>
+        <h3 id="profile-name">Honorio</h3>
+        <a href="index2a.html">
+          <h3 id="section-title">Personal Information:</h3>
+        </a>
         <p id="profile-info">
-          Honorio es un empresario centrado en el uso de las energías
-          no renovables. Para el el dinero es solo un medio para poder
-          conseguir lo que realmente importa en esta vida, cita textual:
-          "Bolsos de merchandising de <b>Pucca</b>".
+          Hi, I'm Honorio, a renowned traveler and a connoisseur of all aspects
+          of hostelry all around the globe. I might sound arrogant sometimes, but
+          trust me, I know what I'm talking about. However, in the end this is just
+          an opinion, and everyone has its own tastes, so feel free to go ahead
+          and try stuff for yourself.<br>Cheers!
         </p>
       </div>
 
-      <hr>
+      <hr id="hideable">
 
       <!-- Last Opinions -->
-      <div class="profile-section">
-        <h3 id="section-title">Last Opinions:</h3>
+      <div class="profile-section" id="hideable">
+        <a href="index2b.html">
+          <h3 id="section-title">Last Opinions:</h3>
+        </a>
         <li class="section-box">
           <h5>Chicote Club, Madrid, Spain</h5>
           <p id="opinion">
-            En ocasiones los objetos más cotidianos son los que menos consideramos
-            como útiles, aunque siempre los tengamos a mano para solucionar nuestros
-            problemas. Digo esto porque curiosamente, para ser un restaurante de 3
-            estrellas michelín, ningun puto cuchillo estaba afilado, y yo acabé, no
-            solo con hambre, sino con ganas de cortarme las venas.
+            Sometimes, we underestimate day-to-day utensils when it comes to their
+            ability to perform well at solving tasks they weren't designed for. I say
+            this because I almost felt like using a spoon to cut through my steak,
+            because the knives were just as useless. The steak was good though...
           </p>
         </li>
         <li class="section-box">
-          <h5>Gustavo, Adolfo, Bécquer</h5>
+          <h5>Delirium Café, Brussels, Belgium</h5>
           <p id="opinion">
-            ¿Qué es poesía? Dices mientras clavas tu pupila en mi pupila azul...
-            ¿Qué es poesía? ¿Y a mí me lo preguntas? Poesía, eres tú hdp.
+            I'm going to be completely honest with you. I had heard about the place
+            and I was pretty stocked to visit it with some friends. They ordered the
+            beers they wanted me to try, and somehow, I couldn't notice how heavily
+            graded they were... I can't remember anything else from that night. 10/10.
           </p>
         </li>
         <li class="section-box">
-          <h5>Dame, Dinero, Porfa</h5>
+          <h5>Bar Paco, Murcia, Spain</h5>
           <p id="opinion">
-            Estoy to pelao cabron, no me dieron la beca y se la dieron al Luispi...
-            Necesito chelos pa viajar por Leganés, necesito monedos pa salir por
-            La Cubierta a bailar salsa con las latin mamis...
+            Paco, the owner of the bar, was quite an element... His humorous comments
+            made me feel just like if I were at home on Christmas Eve, surrounded
+            by phony relatives who I barely know. The place wasn't very clean either.
+            Don't go there expecting good food.
           </p>
         </li>
       </div>
 
-      <hr>
+      <hr id="hideable">
 
       <!-- Preferences -->
-      <div class="profile-section">
+      <div class="profile-section" id="hideable">
         <span id="preference-header">
           <h3 id="section-title">My Preferences:</h3>
           <button id="preference-add">+</button>
@@ -119,8 +141,18 @@
           </span>
         </span>
       </div>
+      <!-- WARNING:  -->
+      <!-- Titles/Links to each section (tablet view)-->
+      <div class="tabletLinks">
+        <a id="currentLink" href="index2a.html"> Personal Information</a>
+        <div class="vertical-line"></div>
+        <a href="index2b.html"> Last Opinions</a>
+        <div class="vertical-line"></div>
+        <a href="index2.html"> My Preferences</a>
+      </div>
     </div>
-    <!---------------->
+
+
     <!-- Right Panel -->
     <div class="panel" id="rightbox">
       <div class="right-section">
@@ -139,7 +171,7 @@
             <input class="form-input" type="text" name="phonenumber" placeholder="Phone Number">
           </span>
           <span id="input-group">
-            <input class="form-input" type="text" name="birthdate" placeholder="Date of Birth">
+            <input class="form-input" type="date" name="birthdate" placeholder="Date of Birth">
           </span>
         </form>
 
@@ -165,14 +197,10 @@
           </div>
         </div>
       </div>
-
-
-
-
     </div>
 
 
-    <!-- FOOTER -->
+    <!-- Footer -->
 
     <footer class="panel">
 
@@ -191,7 +219,7 @@
         </a>
       </span>
       <p id="footer-text">
-        ViajeConsejero Copyright &copy; 2019
+        TravelCounsel Copyright &copy; 2019
       </p>
     </footer>
   </div>

@@ -1,6 +1,6 @@
 /*
 border: 1px;
-
+border-style: inset;
 */
 
 
@@ -20,10 +20,10 @@ a {
   text-decoration: none;
 }
 a:link, a:active{
-  color: white;
+  color: black;
 }
 a:visited {
-  color: #dae3e3;
+  color: black;
 }
 a:hover {
   color: hotpink;
@@ -44,10 +44,17 @@ h1 {
   font-size: 40px;
   font-family: 'Roboto';
 }
-nav {
+#optionsIN {
   display: flex;
   align-items: center;
   margin-right: 10px;
+}
+#optionsOUT {
+  display:none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  align-items: center;
 }
 button {
   font-size: 17px;
@@ -58,7 +65,8 @@ button {
   margin-left: 10px;
 }
 /* --------------------- */
-/* ----<< LEFT BOX >>--- */
+
+/* ------<< BODY >>----- */
 #site-back {
   width: auto;
   min-height: 100%;
@@ -117,7 +125,6 @@ hr {
   margin-top: 10px;
   font-family: 'Roboto';
   padding: 4px 10px 1px 10px;
-
   background-color: #cfe3e3;
   border-radius: 12px;
 }
@@ -126,13 +133,16 @@ h5{
   margin-top: 2px;
   margin-bottom: 2px;
 }
+
 p {
   margin-top: 2px;
   text-align: justify;
 }
+
 #opinion {
   font-size: 13px;
 }
+
 .preference-box {
   background-color: #cfe3e3;
   padding: 5px;
@@ -152,7 +162,7 @@ p {
   font-size: 60%;
   margin-left: 0px;
   font-weight: bold;
-  font-family: 'Roboto'
+  font-family: 'Roboto';
 }
 
 #preference-add {
@@ -164,7 +174,7 @@ p {
   margin-left: 15px;
   width: 2vw;
   font-weight: bold;
-  font-family: 'Roboto';
+  font-family: 'Roboto'
 }
 
 #preference-header {
@@ -179,18 +189,26 @@ p {
   flex-wrap: wrap;
 }
 
-/* ----<< RIGHT BOX >>--- */
+.tabletLinks{
+  display: none;
+  font-size: 17px;
+  padding-top: 15px;
+  justify-content: space-around;
+  font-weight: bold;
+}
+/* --------- Right box ---------*/
 #rightbox {
   width: 66%;
+  min-height: 100px;
+  overflow: hidden;
   background-color: white;
   align-items: flex-start;
   display: block;
   padding-bottom: 10px;
   padding-top: 33px;
   margin-bottom: 10px;
-  min-height: 100px;
-  overflow: hidden;
 }
+
 .right-section {
   display: flex;
   flex-wrap: wrap;
@@ -205,7 +223,6 @@ p {
   margin-right: 30px;
   margin-top: 10px;
   align-items: center;
-
 }
 .form-input {
   height: 20px;
@@ -248,6 +265,77 @@ p {
   border-radius: 60px;
   background: radial-gradient(ellipse at center, rgba(242,249,249,1) 6%,rgba(207,227,227,1) 100%);
 }
+#opinion-box{
+  padding: 20px;
+  background-color: #cfe3e3;
+  border-radius: 12px;
+  width: 100%;
+
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 30px;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.opinion-img{
+  margin: 10px;
+  border-color: white;
+  border: 5px solid;
+  border-bottom: 15px solid;
+}
+
+.review-details{
+  margin-top: 10px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.load{
+  display: block;
+  align-content: center;
+  justify-content: space-around;
+  padding: 20px;
+  font-weight: bold;
+  color: #0d6c93;
+  font-family: 'Roboto';
+  /* FIXME: Arbitrary Value to center this thing */
+  margin-left: 41%;
+}
+
+#phoneLinks{
+  display:none;
+  justify-content: space-around;
+  width: 100%;
+  padding: 15px;
+  font-size: 12px;
+}
+
+.icon{
+  margin-left: 4px;
+}
+#currentIcon{
+  font-weight: bold;
+  background-color: #cfe3e3;
+  border-radius: 12px;
+
+}
+
+#highlight{
+  color: black;
+  font-weight: bold;
+}
+
+
+.phoneBlock{
+  display: block;
+  padding: 5px;
+  text-align: center;
+
+}
+
 /* --------------------- */
 
 footer{
@@ -287,3 +375,103 @@ footer{
   margin-right: 5px;
   margin-left: 5px;
 }
+
+/* ------------------------------------------ */
+/* ------------ TABLET ADAPTATION ------------*/
+@media screen and (max-width: 768px) {
+/*---- Page A: Personal Information -----*/
+  #currentLink {
+    text-decoration: underline;
+  }
+
+  #optionsIN{
+    display: none;
+  }
+
+  #optionsOUT{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  button{
+    width: 31%;
+  }
+
+  #leftbox{
+    width: 100%;
+    background-color: #3FCaC3;
+  }
+  .profile-section {
+    margin-top: 10px;
+  }
+  #profile-name {
+    margin-left: 5%;
+    font-size: 25px;
+  }
+  #profile-pic{
+    width: 20%;
+    padding-left: 7px;
+  }
+  #section-title{
+    display:none;
+  }
+  #profile-info{
+    display:none;
+  }
+  #rightbox{
+    width: 100%;
+    padding-bottom: 33px;
+
+  }
+  #hideable{
+    display:none;
+  }
+  .tabletLinks{
+    display:flex;
+  }
+
+/*--------------------------------*/
+/*---- Page B: Last Opinions -----*/
+  #currentLink {
+  text-decoration: underline;
+  }
+  #lastOpinionsHeader {
+    display:none;
+  }
+  .opinion-box{
+    padding: 10px;
+    margin-bottom: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .load{
+    display:none;
+  }
+  .vertical-line{
+    border-color: #cfe3e3;
+  }
+}
+
+/*   SMARTPHONE ADAPTATION   */
+  @media screen and (max-width:600px) {
+/*---- Page A: Personal Information -----*/
+    #optionsIN{
+      display: none;
+    }
+    #optionsOUT{
+      display:none;
+    }
+    .tabletLinks{
+      display:none;
+    }
+    #phoneLinks{
+      display:flex;
+    }
+    footer{
+      background-color: #cfe3e3;
+    }
+/*---- Page B: Last Opinions -----------*/
+    .review-text{
+      display:none;
+    }
+  }

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Head Data -->
+<head>
+  <title>UI_Exercise_1</title>
+
+  <!-- Meta-Data -->
+  <meta charset="utf-8"/>
+  <meta name="author" content="Fernando Pérez Lozano & Antonio Viñuela Pérez"/>
+  <meta name="description" content="First Exercise on User Interfaces">
+
+  <!-- CSS Stylesheet Link -->
+  <link rel="stylesheet" href="styles2b.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+
+<!-- Header -->
+<header class="panel" id="headbox">
+
+
+  <img id="logo" src="images/faces.png" alt="WebLogo"/>
+
+  <h1>TravelCounsel</h1>
+
+  <nav id= "optionsIN">
+    <button type="button" class="option-button">
+      <a href="index2b.html">Option 1</a>
+    </button>
+    <button type="button" class="option-button">
+      <a href="index2b.html">Option 2</a>
+    </button>
+    <button type="button" class="option-button">
+      <a href="index2b.html">Option 3</a>
+    </button>
+  </nav>
+
+</header>
+
+<!-- Body -->
+<body>
+  <nav id= "optionsOUT">    <!--To be shown on Tablet-->
+    <button type="button" class="option-button">
+      <a href="index2b.html">Option 1</a>
+    </button>
+    <button type="button" class="option-button">
+      <a href="index2b.html">Option 2</a>
+    </button>
+    <button type="button" class="option-button">
+      <a href="index2b.html">Option 3</a>
+    </button>
+  </nav>
+
+  <div id="site-back">
+    <!-- Left Panel -->
+    <div class="panel" id="leftbox">
+
+      <!-- Personal Details -->
+      <div class="profile-section">
+        <img id="profile-pic" src="images/profile.png" alt="ProfilePic"/>
+        <h3 id="profile-name">Honorio</h3>
+        <a href="index2a.html">
+          <h3 id="section-title">Personal Information:</h3>
+        </a>
+        <p id="profile-info">
+          Hi, I'm Honorio, a renowned traveler and a connoisseur of all aspects
+          of hostelry all around the globe. I might sound arrogant sometimes, but
+          trust me, I know what I'm talking about. However, in the end this is just
+          an opinion, and everyone has its own tastes, so feel free to go ahead
+          and try stuff for yourself.<br>Cheers!
+        </p>
+      </div>
+
+      <hr id="hideable">
+
+      <!-- Last Opinions -->
+      <div class="profile-section" id="hideable">
+        <a href="index2b.html">
+          <h3 id="section-title">Last Opinions:</h3>
+        </a>
+        <li class="section-box">
+          <h5>Chicote Club, Madrid, Spain</h5>
+          <p id="opinion">
+            Sometimes, we underestimate day-to-day utensils when it comes to their
+            ability to perform well at solving tasks they weren't designed for. I say
+            this because I almost felt like using a spoon to cut through my steak,
+            because the knives were just as useless. The steak was good though...
+          </p>
+        </li>
+        <li class="section-box">
+          <h5>Delirium Café, Brussels, Belgium</h5>
+          <p id="opinion">
+            I'm going to be completely honest with you. I had heard about the place
+            and I was pretty stocked to visit it with some friends. They ordered the
+            beers they wanted me to try, and somehow, I couldn't notice how heavily
+            graded they were... I can't remember anything else from that night. 10/10.
+          </p>
+        </li>
+        <li class="section-box">
+          <h5>Bar Paco, Murcia, Spain</h5>
+          <p id="opinion">
+            Paco, the owner of the bar, was quite an element... His humorous comments
+            made me feel just like if I were at home on Christmas Eve, surrounded by
+            phony relatives who I barely know. The place wasn't very clean either.
+            Don't go there expecting good food.
+          </p>
+        </li>
+      </div>
+
+      <hr id="hideable">
+
+      <!-- Preferences -->
+      <div class="profile-section" id="hideable">
+        <span id="preference-header">
+          <h3 id="section-title">My Preferences:</h3>
+          <button id="preference-add">+</button>
+        </span>
+
+        <span id="preference-body">
+          <span class="preference-box">
+            <h5 id="preference-text">Weekends</h5>
+            <button id="preference-delete">x</button>
+          </span>
+          <span class="preference-box">
+            <h5 id="preference-text">Lemon Smell</h5>
+            <button id="preference-delete">x</button>
+          </span>
+          <span class="preference-box">
+            <h5 id="preference-text">Clean Bathrooms</h5>
+            <button id="preference-delete">x</button>
+          </span>
+          <span class="preference-box">
+            <h5 id="preference-text">Tennis</h5>
+            <button id="preference-delete">x</button>
+          </span>
+          <span class="preference-box">
+            <h5 id="preference-text">Canary Islands</h5>
+            <button id="preference-delete">x</button>
+          </span>
+        </span>
+      </div>
+
+      <!--- To be shown on Tablet --------->
+      <div class="tabletLinks">
+        <a href="index2a.html"> <h4>Personal Information</h4></a>
+        <div class="vertical-line"></div>
+        <a id="currentLink" href="index2b.html"><h4>Last Opinions</h4></a>
+        <div class="vertical-line"></div>
+        <a href="index2b.html"><h4>My Preferences</h4></a>
+      </div>
+    </div>
+    <!-------------------------------------->
+
+    <!--- Right box --------->
+    <div class="panel" id="rightbox">
+      <div class="right-section">
+        <h2 id="section-title">Last Opinions</h2>
+
+        <div class="section-box" id="opinion-box">
+          <img class="opinion-img" src="images/chicote.jpg" alt="Chicote Club Picture" width="120px" height="120px">
+          <div class="review-details">
+            <p>Chicote Club</p>
+            <p>Madrid, Spain</p>
+            <p>20/8/2019</p>
+          </div>
+          <p class="review-text">
+            Sometimes, we underestimate day-to-day utensils when it comes to their
+            ability to perform well at solving tasks they weren't designed for. I say
+            this because I almost felt like using a spoon to cut through my steak,
+            because the knives were just as useless. The steak was good though...
+          </p>
+        </div>
+
+        <div class="section-box" id="opinion-box">
+          <img class="opinion-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/CafeDeliriumEx.JPG/1024px-CafeDeliriumEx.JPG" alt="Delirium Café Picture" width="120px" height="120px">
+          <div class="review-details">
+            <p>Delirium Café</p>
+            <p>Brussels, Belgium</p>
+            <p>28/8/2019</p>
+          </div>
+          <p class="review-text">
+            I'm going to be completely honest with you. I had heard about the place
+            and I was pretty stocked to visit it with some friends. They ordered the
+            beers they wanted me to try, and somehow, I couldn't notice how heavily
+            graded they were... I can't remember anything else from that night. 10/10.
+          </p>
+        </div>
+
+        <div class="section-box" id="opinion-box">
+          <img class="opinion-img" src="https://media-cdn.tripadvisor.com/media/photo-s/0b/1a/78/ed/bar-paco.jpg" alt="Bar Paco Picture" width="120px" height="120px">
+          <div class="review-details">
+            <p>Bar Paco</p>
+            <p>Murcia, Spain</p>
+            <p>02/9/2019</p>
+          </div>
+          <p class="review-text">
+            Paco, the owner of the bar, was quite an element... His humorous comments
+            made me feel just like if I were at home on Christmas Eve, surrounded
+            by phony relatives who I barely know. The place wasn't very clean either.
+            Don't go there expecting good food.
+          </p>
+        </div>
+        <div class="load">
+
+          <p id="load-element">Load More</p>
+          <img id="load-element"src="https://image.flaticon.com/icons/svg/81/81948.svg" alt="LoadMore" width="60px" height="60px">
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Phone Stuff -->
+    <div id="phoneLinks">
+        <div class="phoneBlock">
+          <a href="index2b.html">
+            <img class="icon" src="images/usuario.png" alt="User" width="40" height="40">
+            <p>
+              Personal
+            </p>
+          </a>
+        </div>
+        <div class="phoneBlock" id="currentIcon">
+          <a href="index2b.html">
+            <img class="icon" src="images/nube.png" alt="Opinions" width="40" height="40">
+            <p id="highlight">
+              Opinions
+            </p>
+          </a>
+        </div>
+        <div class="phoneBlock">
+          <a href="index2b.html">
+            <img class="icon" src="images/heart.png" alt="Preferences" width="40" height="40">
+            <p>
+              Preferences
+            </p>
+          </a>
+        </div>
+      </div>
+      <!-- Footer -->
+
+      <footer class="panel">
+
+        <span id="socials-container">
+
+          <a id="socials-icon" href="https://www.instagram.com">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1024px-Instagram_logo_2016.svg.png" width="20px" height="20px" title="Instagram" alt="Instagram Logo">
+          </a>
+          <div class="vertical-line"></div>
+          <a id="socials-icon" href="https://www.twitter.com">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1024px-Twitter_bird_logo_2012.svg.png" width="20px" height="20px" title="Twitter" alt="Twitter Logo">
+          </a>
+          <div class="vertical-line"></div>
+          <a id="socials-icon" href="https://www.facebook.com">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/600px-Facebook_Logo_%282019%29.png" width="20px" height="20px" title="Facebook" alt="Facebook Logo">
+          </a>
+        </span>
+        <p id="footer-text">
+          TravelCounsel Copyright &copy; 2019
+        </p>
+      </footer>
+
+
+    </div>
+
+    </html>
