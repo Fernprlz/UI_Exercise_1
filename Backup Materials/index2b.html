@@ -10,7 +10,7 @@
   <meta name="description" content="First Exercise on User Interfaces">
 
   <!-- CSS Stylesheet Link -->
-  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="styles2b.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 </head>
 
@@ -22,16 +22,15 @@
 
   <h1>TravelCounsel</h1>
 
-  <!-- Option Menu inside the header (normal view)-->
-  <nav id="optionsIN">
+  <nav id= "optionsIN">
     <button type="button" class="option-button">
-      <a href="index2a.html">Option 1</a>
+      <a href="index2b.html">Option 1</a>
     </button>
     <button type="button" class="option-button">
-      <a href="index2a.html">Option 2</a>
+      <a href="index2b.html">Option 2</a>
     </button>
     <button type="button" class="option-button">
-      <a href="index2a.html">Option 3</a>
+      <a href="index2b.html">Option 3</a>
     </button>
   </nav>
 
@@ -39,17 +38,15 @@
 
 <!-- Body -->
 <body>
-
-  <!-- Option Menu outside the header (tablet view)-->
-  <nav id= "optionsOUT">
+  <nav id= "optionsOUT">    <!--To be shown on Tablet-->
     <button type="button" class="option-button">
-      <a href="index2a.html">Option 1</a>
+      <a href="index2b.html">Option 1</a>
     </button>
     <button type="button" class="option-button">
-      <a href="index2a.html">Option 2</a>
+      <a href="index2b.html">Option 2</a>
     </button>
     <button type="button" class="option-button">
-      <a href="index2a.html">Option 3</a>
+      <a href="index2b.html">Option 3</a>
     </button>
   </nav>
 
@@ -102,8 +99,8 @@
           <h5>Bar Paco, Murcia, Spain</h5>
           <p id="opinion">
             Paco, the owner of the bar, was quite an element... His humorous comments
-            made me feel just like if I were at home on Christmas Eve, surrounded
-            by phony relatives who I barely know. The place wasn't very clean either.
+            made me feel just like if I were at home on Christmas Eve, surrounded by
+            phony relatives who I barely know. The place wasn't very clean either.
             Don't go there expecting good food.
           </p>
         </li>
@@ -124,7 +121,7 @@
             <button id="preference-delete">x</button>
           </span>
           <span class="preference-box">
-            <h5 id="preference-text">Lemons</h5>
+            <h5 id="preference-text">Lemon Smell</h5>
             <button id="preference-delete">x</button>
           </span>
           <span class="preference-box">
@@ -142,59 +139,71 @@
         </span>
       </div>
 
-      <!-- Titles/Links to each section (tablet view)-->
+      <!--- To be shown on Tablet --------->
       <div class="tabletLinks">
-        <a id="currentLink" href="index2a.html"> <h4>Personal Information</h4></a>
+        <a href="index2a.html"> <h4>Personal Information</h4></a>
         <div class="vertical-line"></div>
-        <a href="index2b.html"><h4>Last Opinions</h4></a>
+        <a id="currentLink" href="index2b.html"><h4>Last Opinions</h4></a>
         <div class="vertical-line"></div>
         <a href="index2b.html"><h4>My Preferences</h4></a>
       </div>
     </div>
+    <!-------------------------------------->
 
-
-    <!-- Right Panel -->
+    <!--- Right box --------->
     <div class="panel" id="rightbox">
       <div class="right-section">
-        <h2 id="section-title">Personal Information</h2>
+        <h2 id="section-title">Last Opinions</h2>
 
-        <form class="right-inner">
-          <span id="input-group">
-            <input class="form-input" type="text" name="firstname" placeholder="First Name">
-            <input class="form-input" type="text" name="surname" placeholder="Surname">
-          </span>
-          <span id="input-group">
-            <input class="form-input" type="text" name="email" placeholder="e-Mail Address">
-          </span>
-          <span id="input-group">
-            <input class="form-input" type="text" name="address" placeholder="Home Address">
-            <input class="form-input" type="text" name="phonenumber" placeholder="Phone Number">
-          </span>
-          <span id="input-group">
-            <input class="form-input" type="date" name="birthdate" placeholder="Date of Birth">
-          </span>
-        </form>
+        <div class="section-box" id="opinion-box">
+          <img class="opinion-img" src="images/chicote.jpg" alt="Chicote Club Picture" width="120px" height="120px">
+          <div class="review-details">
+            <p>Chicote Club</p>
+            <p>Madrid, Spain</p>
+            <p>20/8/2019</p>
+          </div>
+          <p class="review-text">
+            Sometimes, we underestimate day-to-day utensils when it comes to their
+            ability to perform well at solving tasks they weren't designed for. I say
+            this because I almost felt like using a spoon to cut through my steak,
+            because the knives were just as useless. The steak was good though...
+          </p>
+        </div>
 
-      </div>
-      <div class="right-section">
-        <h2 id="section-title">My Activity in the App</h2>
-        <div id="activity-box">
-          <div class="activity-icon">
-              <h3 id="activity-number">1250</h3>
-              <h6 id="activity-text">Points</h6>
+        <div class="section-box" id="opinion-box">
+          <img class="opinion-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/CafeDeliriumEx.JPG/1024px-CafeDeliriumEx.JPG" alt="Delirium Café Picture" width="120px" height="120px">
+          <div class="review-details">
+            <p>Delirium Café</p>
+            <p>Brussels, Belgium</p>
+            <p>28/8/2019</p>
           </div>
-          <div class="activity-icon">
-              <h3 id="activity-number">12</h3>
-              <h6 id="activity-text">Level</h6>
+          <p class="review-text">
+            I'm going to be completely honest with you. I had heard about the place
+            and I was pretty stocked to visit it with some friends. They ordered the
+            beers they wanted me to try, and somehow, I couldn't notice how heavily
+            graded they were... I can't remember anything else from that night. 10/10.
+          </p>
+        </div>
+
+        <div class="section-box" id="opinion-box">
+          <img class="opinion-img" src="https://media-cdn.tripadvisor.com/media/photo-s/0b/1a/78/ed/bar-paco.jpg" alt="Bar Paco Picture" width="120px" height="120px">
+          <div class="review-details">
+            <p>Bar Paco</p>
+            <p>Murcia, Spain</p>
+            <p>02/9/2019</p>
           </div>
-          <div class="activity-icon">
-              <h3 id="activity-number">4</h3>
-              <h6 id="activity-text">Opinions</h6>
-          </div>
-          <div class="activity-icon">
-              <h3 id="activity-number">4</h3>
-              <h6 id="activity-text">Photos</h6>
-          </div>
+          <p class="review-text">
+            Paco, the owner of the bar, was quite an element... His humorous comments
+            made me feel just like if I were at home on Christmas Eve, surrounded
+            by phony relatives who I barely know. The place wasn't very clean either.
+            Don't go there expecting good food.
+          </p>
+        </div>
+        <div class="load">
+
+          <p id="load-element">Load More</p>
+          <img id="load-element"src="https://image.flaticon.com/icons/svg/81/81948.svg" alt="LoadMore" width="60px" height="60px">
+
         </div>
       </div>
     </div>
@@ -226,28 +235,30 @@
           </a>
         </div>
       </div>
-    <!-- Footer -->
+      <!-- Footer -->
 
-    <footer class="panel">
+      <footer class="panel">
 
-      <span id="socials-container">
+        <span id="socials-container">
 
-        <a id="socials-icon" href="https://www.instagram.com">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1024px-Instagram_logo_2016.svg.png" width="20px" height="20px" title="Instagram" alt="Instagram Logo">
-        </a>
-        <div class="vertical-line"></div>
-        <a id="socials-icon" href="https://www.twitter.com">
-          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1024px-Twitter_bird_logo_2012.svg.png" width="20px" height="20px" title="Twitter" alt="Twitter Logo">
-        </a>
-        <div class="vertical-line"></div>
-        <a id="socials-icon" href="https://www.facebook.com">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/600px-Facebook_Logo_%282019%29.png" width="20px" height="20px" title="Facebook" alt="Facebook Logo">
-        </a>
-      </span>
-      <p id="footer-text">
-        TravelCounsel Copyright &copy; 2019
-      </p>
-    </footer>
-  </div>
-</body>
-</html>
+          <a id="socials-icon" href="https://www.instagram.com">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1024px-Instagram_logo_2016.svg.png" width="20px" height="20px" title="Instagram" alt="Instagram Logo">
+          </a>
+          <div class="vertical-line"></div>
+          <a id="socials-icon" href="https://www.twitter.com">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1024px-Twitter_bird_logo_2012.svg.png" width="20px" height="20px" title="Twitter" alt="Twitter Logo">
+          </a>
+          <div class="vertical-line"></div>
+          <a id="socials-icon" href="https://www.facebook.com">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/600px-Facebook_Logo_%282019%29.png" width="20px" height="20px" title="Facebook" alt="Facebook Logo">
+          </a>
+        </span>
+        <p id="footer-text">
+          TravelCounsel Copyright &copy; 2019
+        </p>
+      </footer>
+
+
+    </div>
+
+    </html>

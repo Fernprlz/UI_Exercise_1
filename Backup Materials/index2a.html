@@ -10,7 +10,7 @@
   <meta name="description" content="First Exercise on User Interfaces">
 
   <!-- CSS Stylesheet Link -->
-  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="styles2b.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 </head>
 
@@ -25,13 +25,13 @@
   <!-- Option Menu inside the header (normal view)-->
   <nav id="optionsIN">
     <button type="button" class="option-button">
-      <a href="index.html">Option 1</a>
+      <a href="index2a.html">Option 1</a>
     </button>
     <button type="button" class="option-button">
-      <a href="index.html">Option 2</a>
+      <a href="index2a.html">Option 2</a>
     </button>
     <button type="button" class="option-button">
-      <a href="index.html">Option 3</a>
+      <a href="index2a.html">Option 3</a>
     </button>
   </nav>
 
@@ -43,13 +43,13 @@
   <!-- Option Menu outside the header (tablet view)-->
   <nav id= "optionsOUT">
     <button type="button" class="option-button">
-      <a href="index.html">Option 1</a>
+      <a href="index2a.html">Option 1</a>
     </button>
     <button type="button" class="option-button">
-      <a href="index.html">Option 2</a>
+      <a href="index2a.html">Option 2</a>
     </button>
     <button type="button" class="option-button">
-      <a href="index.html">Option 3</a>
+      <a href="index2a.html">Option 3</a>
     </button>
   </nav>
 
@@ -144,21 +144,88 @@
 
       <!-- Titles/Links to each section (tablet view)-->
       <div class="tabletLinks">
-        <a id="currentLink" href="index2a.html"> Personal Information</a>
+        <a id="currentLink" href="index2a.html"> <h4>Personal Information</h4></a>
         <div class="vertical-line"></div>
-        <a href="index2b.html"> Last Opinions</a>
+        <a href="index2b.html"><h4>Last Opinions</h4></a>
         <div class="vertical-line"></div>
-        <a href="index2.html"> My Preferences</a>
+        <a href="index2b.html"><h4>My Preferences</h4></a>
       </div>
     </div>
 
 
     <!-- Right Panel -->
     <div class="panel" id="rightbox">
+      <div class="right-section">
+        <h2 id="section-title">Personal Information</h2>
 
+        <form class="right-inner">
+          <span id="input-group">
+            <input class="form-input" type="text" name="firstname" placeholder="First Name">
+            <input class="form-input" type="text" name="surname" placeholder="Surname">
+          </span>
+          <span id="input-group">
+            <input class="form-input" type="text" name="email" placeholder="e-Mail Address">
+          </span>
+          <span id="input-group">
+            <input class="form-input" type="text" name="address" placeholder="Home Address">
+            <input class="form-input" type="text" name="phonenumber" placeholder="Phone Number">
+          </span>
+          <span id="input-group">
+            <input class="form-input" type="date" name="birthdate" placeholder="Date of Birth">
+          </span>
+        </form>
+
+      </div>
+      <div class="right-section">
+        <h2 id="section-title">My Activity in the App</h2>
+        <div id="activity-box">
+          <div class="activity-icon">
+              <h3 id="activity-number">1250</h3>
+              <h6 id="activity-text">Points</h6>
+          </div>
+          <div class="activity-icon">
+              <h3 id="activity-number">12</h3>
+              <h6 id="activity-text">Level</h6>
+          </div>
+          <div class="activity-icon">
+              <h3 id="activity-number">4</h3>
+              <h6 id="activity-text">Opinions</h6>
+          </div>
+          <div class="activity-icon">
+              <h3 id="activity-number">4</h3>
+              <h6 id="activity-text">Photos</h6>
+          </div>
+        </div>
+      </div>
     </div>
 
-
+    <!-- Phone Stuff -->
+    <div id="phoneLinks">
+        <div class="phoneBlock">
+          <a href="index2a.html">
+            <img class="icon" src="images/usuario.png" alt="User" width="40" height="40">
+            <p>
+              Personal
+            </p>
+          </a>
+        </div>
+        <div class="phoneBlock" id="currentIcon">
+          <a href="index2b.html">
+            <img class="icon" src="images/nube.png" alt="Opinions" width="40" height="40">
+            <p id="highlight">
+              Opinions
+            </p>
+          </a>
+        </div>
+        <div class="phoneBlock">
+          <a href="index2b.html">
+            <img class="icon" src="images/heart.png" alt="Preferences" width="40" height="40">
+            <p>
+              Preferences
+            </p>
+          </a>
+        </div>
+      </div>
     <!-- Footer -->
 
     <footer class="panel">

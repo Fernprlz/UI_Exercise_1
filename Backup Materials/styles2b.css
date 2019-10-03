@@ -450,6 +450,7 @@ footer{
   .vertical-line{
     border-color: #cfe3e3;
   }
+
 }
 
 /*   SMARTPHONE ADAPTATION   */
@@ -462,10 +463,14 @@ footer{
       display:none;
     }
     .tabletLinks{
-      display:none;
+      display:none
     }
     #phoneLinks{
       display:flex;
+      
+    }
+    .form-input{
+      width: ;
     }
     footer{
       background-color: #cfe3e3;
