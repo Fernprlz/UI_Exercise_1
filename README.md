@@ -1,4 +1,4 @@
-# UI_Exercise_1
+﻿# UI_Exercise_1
 
 
 User's Interface first exercise on web design.
@@ -15,8 +15,8 @@ User's Interface first exercise on web design.
 
 ---
   * [x] Exercise 1.
-  * [] Exercise 2.
-  * [] Exercise 3.
+  * [x] Exercise 2.
+  * [x] Exercise 3.
 ---
 
 So, our web design must look somewhat like this:
